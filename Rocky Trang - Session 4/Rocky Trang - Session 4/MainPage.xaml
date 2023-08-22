@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rocky_Trang___Session_4.MainPage"
+             Title=""
+             WidthRequest="500"
+             HeightRequest="400">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label x:Name="quoteLabel" HorizontalOptions="Center" Text="" />
+            <Label x:Name="authorLabel" HorizontalOptions="Center" Text="" FontAttributes="Italic" />
+            <ImageButton x:Name="favouriteButton" Source="star_unshaded.png" WidthRequest="20" HeightRequest="20" Clicked="favouriteButton_Clicked"/>
+            <Button x:Name ="randomQuotebutton" Text="Random Quote" Clicked="randomQuotebutton_Clicked"/>
+            <Entry x:Name="quoteEntry" Placeholder="Enter a quote" />
+            <Entry x:Name="authorEntry" Placeholder="Enter the author" />
+            <Button x:Name ="saveQuoteButton" Text="Save Quote" Clicked="saveQuoteButton_Clicked"/>
+            <Button x:Name ="seeFavouritesButton" Text="Favourites" Clicked="seeFavouritesButton_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
